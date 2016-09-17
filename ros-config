@@ -1,0 +1,9 @@
+echo BB-PWM2 > /sys/devices/platform/bone_capemgr/slots
+sleep 2
+echo 0 > /sys/class/pwm/pwmchip0/export
+
+echo BB-ADC > /sys/devices/platform/bone_capemgr/slots
+sleep 2
+
+cat /sys/devices/platform/bone_capemgr/slots
+
